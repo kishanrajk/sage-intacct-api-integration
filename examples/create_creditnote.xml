@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<request>
+  <control>
+    <senderid>YOUR_SENDER_ID</senderid>
+    <password>YOUR_SENDER_PASSWORD</password>
+    <controlid>control3</controlid>
+    <uniqueid>false</uniqueid>
+    <dtdversion>3.0</dtdversion>
+  </control>
+  <operation>
+    <authentication>
+      <login>
+        <userid>YOUR_USER_ID</userid>
+        <companyid>YOUR_COMPANY_ID</companyid>
+        <password>YOUR_USER_PASSWORD</password>
+      </login>
+    </authentication>
+    <content>
+      <function controlid="createCreditNote">
+        <create>
+          <ARCREDIT>
+            <CUSTOMERID>CUST001</CUSTOMERID>
+            <CREDITNO>CN001</CREDITNO>
+            <DATECREATED>
+              <year>2025</year>
+              <month>09</month>
+              <day>06</day>
+            </DATECREATED>
+            <DESCRIPTION>Sample Credit Note</DESCRIPTION>
+            <LINEITEMS>
+              <LINEITEM>
+                <ITEMID>ITEM001</ITEMID>
+                <QUANTITY>1</QUANTITY>
+                <PRICE>50</PRICE>
+              </LINEITEM>
+            </LINEITEMS>
+          </ARCREDIT>
+        </create>
+      </function>
+    </content>
+  </operation>
+</request>
