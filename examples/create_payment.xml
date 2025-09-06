@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<request>
+  <control>
+    <senderid>YOUR_SENDER_ID</senderid>
+    <password>YOUR_SENDER_PASSWORD</password>
+    <controlid>control2</controlid>
+    <uniqueid>false</uniqueid>
+    <dtdversion>3.0</dtdversion>
+  </control>
+  <operation>
+    <authentication>
+      <login>
+        <userid>YOUR_USER_ID</userid>
+        <companyid>YOUR_COMPANY_ID</companyid>
+        <password>YOUR_USER_PASSWORD</password>
+      </login>
+    </authentication>
+    <content>
+      <function controlid="createPayment">
+        <create>
+          <RECEIPT>
+            <CUSTOMERID>CUST001</CUSTOMERID>
+            <RECEIPTNO>PAY001</RECEIPTNO>
+            <DATECREATED>
+              <year>2025</year>
+              <month>09</month>
+              <day>06</day>
+            </DATECREATED>
+            <PAYMENTMETHOD>Cash</PAYMENTMETHOD>
+            <DETAILS>
+              <DETAIL>
+                <ARINVOICEKEY>INV001</ARINVOICEKEY>
+                <AMOUNT>200</AMOUNT>
+              </DETAIL>
+            </DETAILS>
+          </RECEIPT>
+        </create>
+      </function>
+    </content>
+  </operation>
+</request>
